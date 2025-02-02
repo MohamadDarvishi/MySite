@@ -3,9 +3,10 @@ html{
 }
 
 body{
-    margin: 2em 15% 2em 15%;
+    margin: 2em 12.5% 2em 12.5%;
     font-size: 18px;
     direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
     font-variation-settings: "wght" 400;
     line-height: 1.6;
     word-break: break-word;
@@ -31,19 +32,20 @@ h6{
 }
 
 ::selection {
-    background-color:#00cc99;
+    background-color:rgb(63, 71, 79);
     color:aliceblue;
 }
 
 svg{
     user-select: none;
-    height: 1.5rem;
+    width: 1em;
+    height: 1em;
 }
 
 .svg-back{
-    height: 1.7rem;
-    margin: 0px 0px 0px 0px;
-    fill:black;
+    width: 16px;
+    margin: 0px 0px 0px 5px;
+    fill:rgb(63, 71, 79);
 }
 
 h4{
@@ -53,12 +55,8 @@ h4{
 }
 
 a{
-    color: #00cc99;
+    color: #06d3b7;
     text-decoration:none;
-}
-
-.no-a{
-    color: black;
 }
 
 p{
@@ -70,6 +68,10 @@ p{
     margin-bottom: 5px;
 }
 
+.button{
+    border-radius: 10px 10px 10px 10px;
+}
+
 .footer {
     bottom: 1em;
     left: 3em;
@@ -79,36 +81,21 @@ p{
     text-align: left;
 }
 
-.do {
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.button, .back-button {
+.back-button{
+    display: flex;
+    font-family: "Sorena", sans-serif;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    margin: 10px 0px 10px 0px;
     align-items: center;
     justify-content: center;
     position: relative;
-	gap: .5rem;
-	padding: 14px 26px 14px 26px;
-	color: black;
-	box-sizing: border-box;
-	text-decoration: none;
-	border-radius: 14px;
-	font-size: 13pt;
-	border: 2px solid black;
-    background-color: #ffffff;
-	flex-wrap: wrap;
-    display: flex;
-    width: 9em;
+    padding: 8px 22px 10px 22px;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: inset 0 -4px #e2e2e2;
 }
-
-.button:hover, .button:focus, .back-button:hover, .back-button:focus {
-	background-color: rgb(245, 245, 245);
-	transition-property: all;
-	transition-duration: .1s;
-	transition-timing-function: ease;
-}
-
 
 .footer-lang{
     font-size: 16px;
@@ -125,19 +112,7 @@ pre{
     line-height: 1.2;
     padding: 10px 15px;
     font-size: 15px;
-	color: black;
-    border-radius: 10px;
-    overflow: auto;
 }
-
-code {
-    background-color: #00000010;
-}
-
-img {
-    max-width: 100%;
-}
-
 
 @media all and (min-width: 384px) and (max-width: 767px) {
     body{
