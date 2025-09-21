@@ -1,18 +1,18 @@
 @font-face {
     font-family: "Arad-VF";
-    src: url("Arad-VF.woff2");
+    src: url("AradBeta-VF.woff2");
     font-display: fallback;
 }
 
 @font-face {
     font-family: "Arad";
-    src: url("Arad-RegularDots1.woff2");
+    src: url("AradBeta-Regular.woff2");
     font-display: fallback;
 }
 
 @font-face {
     font-family: "Arad";
-    src: url("Arad-BoldDots1.woff2");
+    src: url("AradBeta-Bold.woff2");
     font-weight: 700;
     font-display: fallback;
 }
