@@ -15,6 +15,7 @@ body {
     flex-grow: 1; /* پر کردن فضای باقی‌مانده */
     overflow-y: auto; /* اسکرول داخلی برای ویرایشگر متن */
     text-align: right;
+    line-height: 1.5;
 }
 
 .editor:hover {
