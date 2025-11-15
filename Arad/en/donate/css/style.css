@@ -1,14 +1,12 @@
-html, body {
-	height: 100%;
-	margin: 0;
+
+html{
+	height: fit-content;
 	background: rgb(224,245,240);
 	background: linear-gradient(30deg, rgba(224,245,240,1) 0%, rgba(255,255,255,1) 100%); 
 }
 
 body, .tl-dl, .button {
 	display: flex;
-	justify-content: safe center;
-	align-items: safe center;
 	gap: 0.1rem;
 }
 
@@ -16,6 +14,7 @@ body {
 	flex-direction: column;
 	font-family: "Arad", sans-serif;
 	color: black;
+	margin: 15px 25% 5px 25%;
 }
 
 .tl-dl {
@@ -42,27 +41,12 @@ svg {
 	fill: rgb(255, 255, 255);
 }
 
-.title {
-	font-weight: 900;
-	text-align: center;
-	font-size: 44pt;
-	font-variation-settings: 'DSTY' 2;
-	margin-bottom: 5px
-}
-
-.subtitle {
-	text-align: center;
-	font-weight: bold;
-	font-size: 15pt;
-}
 
 p {
-	text-align: center;
 	margin: 1rem auto;
-	max-width: 60rem;
 	padding: 0 1rem;
 	font-size: 14pt;
-	line-height: 1.7;
+	line-height: 1.6;
 }
 
 .button, .button-menu {
@@ -88,7 +72,7 @@ p {
 	transition-duration: .1s;
 	transition-timing-function: ease;
 	font-weight: 700;
-	font-variation-settings: 'DSTY' 1;
+	font-variation-settings: 'DSTY' 2;
 }
 
 .button-download:hover, .button-download:focus {
@@ -108,18 +92,10 @@ p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-bottom: 10px;
+	justify-content: safe center;
+	align-items: safe center;
 }
 
-.title-box {
-	text-align: center;
-	margin: 0px 15px 0px 15px;
-}
-
-.download-box {
-	text-align: center;
-	margin: 10px 15px 0px 15px;
-}
 
 .version-info {
 	margin-top: 0px;
@@ -135,12 +111,9 @@ p {
 	text-decoration: none;
 }
 
-header{
-	margin: 0px 5px 5px 5px;
-	padding: 00px 10px 10px 10px;
-    justify-content: safe center;
-	align-items: safe center;
-	font-family: "Arad", sans-serif;
+li {
+	margin: 8px;
+	font-size: 13pt;
 }
 
 @supports (font-variation-settings: normal) {
@@ -162,9 +135,10 @@ header{
 
 }
 
-@media all and (max-width: 642px) {
+@media all and (max-width: 1300px) {
 
 	html{
+		height: fit-content;
 		background: rgb(224,245,240);
 		background: linear-gradient(30deg, rgba(224,245,240,1) 0%, rgba(255,255,255,1) 100%); 
 	}
@@ -186,14 +160,7 @@ header{
 	}
 	
 	body, .tl-dl, .button {
-		gap: 0.15rem;
-	}
-
-	body {
-	flex-direction: column;
-	font-family: "Arad", sans-serif;
-	color: black;
-	margin: 5px 5% 5px 5%;
+		gap: 0rem;
 	}
 
 	.tl-dl {
@@ -201,7 +168,6 @@ header{
 	}
 
 	.title {
-		text-align: center;
 		font-size: 36pt;
 		line-height: 1;
 		margin-bottom: 5px;
@@ -215,4 +181,11 @@ header{
 	svg{
 		height: 1.4rem;
 	}
+
+	body {
+	flex-direction: column;
+	font-family: "Arad", sans-serif;
+	color: black;
+	margin: 5px 5% 5px 5%;
+}
 }

@@ -1,62 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
+<html lang="fa-IR">
   <head>
     <meta charset="UTF-8">
-    <title>Docs | Arad Font</title>
+    <title>راهنما | فونت آراد</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../icon.svg" type="image/png"/>
     <meta name="description" content="می‌توانید سؤالاتی که مربوط به نحوه استفاده از فونت آراد، چگونگی فونت آراد، لایسنس و... دارید در اینجا ببینید." />
     <meta name="robots" content="index, follow"/>
-    <meta name="language" content="English"/>
+    <meta name="language" content="Farsi"/>
     <meta name="revisit-after" content="7 day"/>
-    <link rel="alternate" hreflang="fa-ir" href="https://mdarvishi5124.github.io/Arad/fa/docs">
+    <link rel="alternate" hreflang="en-us" href="https://mohamaddarvishi.ir/Arad/docs">
     <link type="text/css" rel="stylesheet" href="../css/default-style.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="../css/header.css">
     <link type="text/css" rel="stylesheet" href="../../css/font.css">
 </head>
 
+<div id="header"></div>
 
-<header>
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
 
-	<div>
-		<a href="https://mdarvishi5124.github.io/Arad">
-			<button class="md-button">		
-				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
-			</button>
-		</a>
-	</div>
-
-	<div>
-		<a href="https://mdarvishi5124.github.io/Arad/lab">
-			<button class="md-button">		
-				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm0-80h560L520-492v-268h-80v268L200-200Zm280-280Z"/></svg>
-			</button>
-		</a>
-	</div>
-
-	<div>
-		<a href="https://mdarvishi5124.github.io/Arad/docs">
-			<button class="md-button">		
-				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg>
-			</button>
-		</a>
-	</div>
-
-	<div class="language-dropdown">
-		<button class="dropdown-btn" onclick="toggleDropdown()">
-			<svg height="24px" viewBox="0 -960 960 960" width="24px">
-				<path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/>
-			</svg>
-		</button>
-		<div class="dropdown-content" id="dropdown">
-      <a>English</a>
-			<a href="../fa/docs/">فارسی</a>
-		</div>
-	</div>
-	
-	<script>
-		function toggleDropdown() {
+	function toggleDropdown() {
 			var dropdown = document.getElementById("dropdown");
 			if (dropdown.style.display === "block") {
 				dropdown.style.display = "none";
@@ -76,88 +44,160 @@
 				}
 			}
 		}
-	</script>
-	</div>
-</header>
+</script>
+
+<script>
+  // هنگام بارگیری صفحه
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fade');
+  });
+});
+
+// هنگام بسته شدن صفحه (مثلاً با کلیک بر روی یک دکمه)
+document.getElementById('closeButton').addEventListener('click', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fadeOut'); // کلاس fadeOut را برای افکت محو ایجاد کنید
+  });
+  // بعد از افکت محو، صفحه را ببندید
+  setTimeout(function() {
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  }, 1000); // بعد از 1 ثانیه
+});
+// هنگام بارگیری صفحه
+$(document).ready(function() {
+  $('*').hide().fadeIn(1000); // تمام عناصر را پنهان کنید و سپس با افکت محو نمایش دهید
+});
+
+// هنگام بسته شدن صفحه
+$('#closeButton').click(function() {
+  $('*').fadeOut(1000, function() {
+    // بعد از افکت محو، صفحه را ببندید
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  });
+});
+
+
+</script>
 
 
 <body>
 
-
+<h3><a href="Help.pdf">فایل PDF راهنمای استفاده از فونت</a></h3>
   <div class="faq">
     <div class="item">
-        <div><h2>Questions and answers about Arad font</h2></div>
+        <div><h2 class="h2_line">پرسش و پاسخ دربارۀ فونت آراد</h2></div>
         <div class="questions">
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>What is Arad font license?</h4></div>
-            <div class="content"><p>Arad font, like other open source fonts, is licensed by OFL. Anyone can use it for any purpose.</p></div>
+            <div class="title" onclick="toggleContent(this)"><h4>فونت آراد تحت چه مجوزی است؟</h4></div>
+            <div class="content"><p>فونت آراد همچون فونت های دیگر تحت مجوز OFL است. هر کسی می‌تواند از آن برای هر قصدی استفاده کند.</p></div>
           </div>
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>What languages ​​does Arad font support?</h4></div>
-            <div class="content"><p>Arad font supports Farsi, Arabic, Türkcə, Urdu, Kurdi, Mazeruni and English languages.</p></div>
+            <div class="title" onclick="toggleContent(this)"><h4>فونت آراد از چه زبان هایی پشتیبانی می‌کند؟</h4></div>
+            <div class="content"><p>فونت آراد از زبان های فارسی، عربی، تۆرکجه، اردو، کوردی مارزونی و انگلیسی پشتیبانی می‌کند.</p></div>
           </div>
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>What is the difference between Arad font and Shabnam font?</h4></div>
-            <div class="content"><p>Although the Shabnam font was still in use, it was an archived project and its bugs were not fixed and it was not as developed as Vazirmatn Font. Arad font is made based on the structure and purpose of Shabnam font, so that it is bigger and does not have the defects of Shabnam. Arad font has been redesigned and has a better design, more weight, new modes, support for more languages ​​and...</p></div>
+            <div class="title" onclick="toggleContent(this)"><h4>فونت آراد، با فونت شبنم چه تفاوتی دارد؟</h4></div>
+            <div class="content"><p>فونت شبنم با آنکه هنوز استفاده می‌شد، اما پروژه‌ای بایگانی شده بود و اشکالات آن رفع نمی‌شد و به اندازۀ وزیرمتن، توسعه نیافت. فونت آراد بر اساس ساختار و هدف فونت شبنم ساخته شده تا هم گسترده‌تر باشد، هم اشکالات شبنم را نداشته باشد. فونت آراد بازطراحی شده و طراحی بهتری دارد، تعداد وزن های بیشتری دارد، حالات نقاط جدیدی دارد، زبان های بیشتری را پشتیبانی می‌کند و...</p></div>
           </div>
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>In what category is the Arad font?</h4></div>
-            <div class="content"><p>Arad font is of Sans type, but it is placed in the category of geometric fonts in Persian fonts.</p></div>
+            <div class="title" onclick="toggleContent(this)"><h4>فونت آراد در چه دسته‌ای قرار می‌گیرد؟</h4></div>
+            <div class="content"><p>فونت آراد از نوع Sans است، اما در فونت های فارسی، جزو دستۀ فونت های هندسی است.</p></div>
           </div>
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>How many weight/dots style does Arad font have?</h4></div>
-            <div class="content"><p>
+            <div class="title" onclick="toggleContent(this)"><h4>فونت آراد، چند وزن یا حالت نقاط دارد؟</h4></div>
+            <div class="content" style="font-feature-settings: 'ss01' "><p>
 
-              <p>8 weights and three dot styles. A total of 24 modes</p>
-              Weight:
-              <li>Thin</li>
-              <li>ExtraLight</li>
-              <li>Light</li>
-              <li>Regular</li>
-              <li>Medium</li>
-              <li>SemiBold</li>
-              <li>Bold</li>
-              <li>ExtraBold</li>
+              <p>10 وزن و سه حالت نقطه. جمعاً 30 حالت</p>
+              وزن ها:
+              <li>نازک - Thin</li>
+              <li>فوق سبک - ExtraLight</li>
+              <li>سبک - Light</li>
+              <li>معمولی - Regular</li>
+              <li>متوسط - Medium</li>
+              <li>نیمه ضخیم - SemiBold</li>
+              <li>ضخیم - Bold</li>
+              <li>فوق ضخیم - ExtraBold</li>
+              <li>سنگین - Black</li>
+              <li>فوق سنگین - ExtraBlack</li>
               
-              Dots Style:
-              <li>1- Discrete square dots</li>
-              <li>2- Continuous square dots</li>
-              <li>3- Rhombus dots</li>
-              <li>4- Circle dots</li>
+              حالات نقطه:
+              <li>1- مربع گسسته</li>
+              <li>2- مربع پیوسته</li>
+              <li>3- لوزی</li>
 
             </p></div>
           </div>
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>How to know about font changes?</h4></div>
-            <div class="content"><p>I will announce any Arad font updates on my personal page.</p>
-            <p>X: <a href="twitter.com/MDarvishi5124">twitter.com/MDarvishi5124</a></p></div>
+            <div class="title" onclick="toggleContent(this)"><h4>چگونه از تغییرات فونت با خبر شویم؟</h4></div>
+            <div class="content"><p>من هر بروزرسانی فونت آراد را در صفحۀ شخصی خودم اطلاع می‌دهم.</p>
+            <p>ایکس: <a href="https://x.com/MDarvishi5124">x.com/MDarvishi5124</a></p>
+            <p>ماستودون: <a href="https://persadon.com/@mdarvishi">persadon.com/@mdarvishi</a></p></div>
           </div>
           
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>How to show English numbers as Persian numbers?</h4></div>
-            <div class="content"><p>This issue can be changed in different ways and English numbers can be displayed in the form of Persian numbers.</p>
-            <p>First solution: Just enable the ss01 feature in the app, which is the best solution. With this solution, you can have Persian numbers in some places and English numbers in some places without using multiple fonts.</p>
-            <p>If you use fonts on the web, you can use this code sample in the site code.</p>
+            <div class="title" onclick="toggleContent(this)"><h4>چرا هنگام نوشتن اعداد، اعداد انگلیسی نمایش داده می‌شوند؟</h4></div>
+            <div class="content"><p>این یک استاندارد است که هنگام نوشتن اعداد انگلیسی، چیزی که به شما نمایش داده شود عدد انگلیسی باشد. از راه های مختلفی می‌توان این موضوع را تغییر داد و اعداد انگلیسی را به شکل اعداد فارسی نمایش داد.</p>
+            <p>راه حل اول: کافیست فیچر ss01 را در برنامه فعال کنید که این بهترین راه حل است. می‌توانید با این راه حل، در بعضی جاها، اعداد تماماً فارسی داشته باشید و بعضی جاها هم اعداد انگلیسی، بدون آنکه از چند فونت استفاده کنید.</p>
+            <p>اگر در وب از فونت استفاده می‌کنید، می‌توانید در کد سایت، از این نمونه کد استفاده کنید.</p>
             <pre>
 .sample_farsi_digits {
   font-feature-settings: "ss01";
 }
             </pre>
-              <p>The second solution: use the Persian number font. These artificially or hacked fonts show Farsi numbers instead of English numbers, which is not recommended, but you can do it.</p>
+              <p>راه حل دوم: از فونت اعداد فارسی استفاده کنید. این فونت ها، به طور مصنوعی یا هک شده، به جای اعداد انگلیسی، اعداد فارسی نشان می‌دهند که پیشنهاد نمی‌شود، اما می‌توانید انجام دهید.</p>
           </div>
           </div>
-
 
           <div class="item">
-            <div class="title" onclick="toggleContent(this)"><h4>What is the font of English letters of Arad font?</h4></div>
-            <div class="content"><p>The font is Kanit. Of course, this font has had changes, and it has been changed into a variable so that it can be used in Arad font.</p>
-              Github:
+            <div class="title" onclick="toggleContent(this)"><h4>چگونه متن من اعداد هم عرض داشته باشند؟</h4></div>
+            <div class="content" style="font-feature-settings: 'ss01' "><p>اعداد هم‌عرض یعنی آنکه مثلاً 1 با 5 عرض یکسانی داشته باشد. برای مثال اعداد زیر هم‌عرض هستند:</p>
+              <p style="font-feature-settings: 'ss01' , 'tnum' ">11111</p>
+              <p style="font-feature-settings: 'ss01' , 'tnum' ">55555</p>
+            <p>این موضوع برای گزارشات، یا برخی کار های اداری مناسب است. برای فعال کردن آن باید  در نرم‌افزار مورد استفاده فیچر tnum را فعال کنید.</p>              
+            <p>کد وب:</p>
+<pre>
+.sample_tabular_numbers {
+font-feature-settings: "tnum";
+}
+</pre>
+            </div>
+          </div>
+
+          
+          <div class="item">
+            <div class="title" onclick="toggleContent(this)"><h4>چگونه در صفحۀ وب، همزمان هم اعداد هم‌عرض را داشته باشم، و هم این اعداد فارسی باشند؟</h4></div>
+            <div class="content">
+<pre>
+.sample_ss01_tnum {
+font-feature-settings: "ss01", "tnum";
+}
+</pre>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="title" onclick="toggleContent(this)"><h4>چگونه از علامت ریال و تومان استفاده کنیم؟</h4></div>
+            <div class="content"><p> برای استفاده از این ویژگی، فایل PDF راهنمای استفاده از فونت رو مطالعه کنید.</p></div>
+          </div>
+
+          <div class="item">
+            <div class="title" onclick="toggleContent(this)"><h4>آیا اعداد مخصوص UI در این نسخه وجود دارد؟</h4></div>
+            <div class="content"><p>بله، برای استفاده از این اعداد، فایل PDF راهنمای استفاده از فونت رو مطالعه کنید.</p></div>
+          </div>
+
+          <div class="item">
+            <div class="title" onclick="toggleContent(this)"><h4>همنشین انگلیسی فونت آراد چیست؟</h4></div>
+            <div class="content"><p>فونت Kanit است. البته این فونت دارای تغییراتی بوده، و به شکل وریبل در آمده تا در فونت آراد قابل استفاده باشد.</p>
+              مخزن پروژه:
             <a href="https://github.com/cadsondemak/kanit">https://github.com/cadsondemak/kanit</a>
             </p></div>
           </div>
@@ -170,27 +210,120 @@
 
 <div class="faq">
   <div class="item">
-      <div><h2>A guide to the versions inside the Arad font package</h2></div>
+      <div><h2 class="h2_line">راهنمای نسخه های درون بستۀ فونت آراد</h2></div>
       <div class="questions">
 
         <p>
-          There are different fonts in Arad font package which are explained here.
+          در بستۀ فونت آراد فونت های مختلفی است که در اینجا راهنمایی در مورد آن نوشته شده است.
         </p>
 
-        <h4>Main</h4>
-        <code>main</code> folder
+        <h4>اصلی</h4>
+        در پوشۀ <code>main</code>
 
-        <h4>Farsi Digits</h4>
-        <p>In hacked form, it shows English and Arabic numbers in Farsi.</p>
-        in the <code>misc/farsi-digits</code> folder
+        <h4>اعداد فارسی</h4>
+        <p>به صورت هک‌شده، اعداد انگلیسی و عربی را به صورت فارسی نشان می‌دهد.</p>
+        در پوشۀ <code>misc/farsi-digits</code>
         
-        <h4>No English letters and English signs</h4>
-        <p>It is a version that does not have English letters. It can be used to choose your own English companion. Also, due to not having additional glyphs for some applications, it can have a smaller volume.</p>
-        in the <code>misc/no-english</code> folder
+        <h4>فاقد حروف انگلیسی و علائم انگلیسی</h4>
+        <p>نسخۀای است که حروف انگلیسی را ندارد. می‌تواند برای آنکه همنشین انگلیسی آن را خودتان انتخاب کنید، استفاده شود. همچنین به دلیل نداشتن گلیف های اضافه برای بعضی کاربرد ها، می‌تواند حجم کمتری داشته باشد.</p>
+        در پوشۀ <code>misc/no-english</code>
+
+        <h4>پوشه های <code>variable</code> و <code>static</code></h4>
+        <p>Static fonts are the fonts that we normally use, but to know about Variable fonts, read the explanation below.</p>
 
       </div>
 
   </div>
+
+</div>
+
+<div class="faq">
+  <div class="item">
+      <div><h2 class="h2_line">پرسش و پاسخ دربارۀ فونت وریبل</h2></div>
+      <div>
+
+        <div>
+          <div class="title" onclick="toggleContent(this)"><h4>فونت وریبل چیست؟</h4></div>
+          <div class="content">
+          <p>فونت وریبل، نسخۀ توسعه‌یافتۀ فونت های کنونی(Static) است که می‌تواند حالات مختلف یک تایپ‌فیس را در یک فایل شامل باشد و کاربر بجای استفاده از چند فونت، تنها از یک فونت با تنظیمات مختلف استفاده کند.</p></div>
+        </div>
+
+        <div>
+          <div class="title" onclick="toggleContent(this)"><h4>فونت وریبل چرا مهم و کاربردی است؟</h4></div>
+          <div class="content">
+          <p>کافیست تصور کنید سایتی که بخواهد تنها سه وزن از فونتی را استفاده کند، چه حجم، و تعداد درخواست بیشتری دارد. فونت وریبل تنها یک فایل است، حجم آن به‌شدت کمتر است، و حالات بیشتری را دارد.</p>
+          <img src="img/var1.png">
+          <p>فونت وریبل می‌تواند بین وزن های مختلف یک فونت، به صورت پیوسته حرکت کند که هم در وبسایت ها برای زیبایی بیشتر، هم در کاربرد های مختلف می‌تواند استفاده شود.          </p>
+          <p>فراموش نکنید که با وجود فونت وریبل، شما می‌توانید هر ضخامتی از فونت را انتخاب کنید.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="title" onclick="toggleContent(this)"><h4>پشتیبانی از فونت های وریبل چگونه است؟</h4></div>
+          <div class="content">
+            <p>فونت های وریبل سطح پیشرفته‌تری از فونت ها هستند و پشتیبانی از آنها، به کاربرد و برنامۀ مورد استفاده بستگی دارد. اگر از برنامه‌ای استفاده می‌کنید، لازم است در مورد پشتیبانی آن از فونت های متغیر(وریبل) تحقیق و جستجو کنید.</p>
+            <p>بیشتر مرورگر ها از چند سال پیش، از فونت های متغیر پشتیبانی می‌کنند، به همین دلیل استفاده از فونت های وریبل در مرورگر ها امن تر است، اما برای مرورگر های قدیمی هم راه حلی وجود دارد که در سوال های بعدی توضیح داده می‌شود.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="title" onclick="toggleContent(this)"><h4>چگونه فونت وریبل را در دستگاه مورد نظرم نصب کنم و در برنامه از آن استفاده کنم؟</h4></div>
+          <div class="content"><p>فونت های وریبل نصب مشابهی با فونت های عادی دارند و استفاده از آنها در نرم‌افزار به پشتیبانی آنها از فونت های وریبل مربوط است.</p></div>
+        </div>
+
+        <div>
+          <div class="title" onclick="toggleContent(this)"><h4>نحوۀ استفاده از فونت وریبل در وب</h4></div>
+          <div class="content">
+            <p>برای تعریف فونت:</p>
+            <pre>
+@font-face {
+  font-family: 'Arad-VF';
+  src: url('fonts/variable/Arad-VF.woff2') format('woff2 supports variations'),
+       url('fonts/variable/Arad-VF.woff2') format('woff2-variations');
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+            </pre>
+            <p>برای استفاده در css:</p>
+<pre>
+body {
+    font-family: Arad-VF;
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 700;
+}
+</pre>
+            <p>یا:</p>
+<pre>
+body {
+    font-family: Arad-VF;
+    font-variation-settings: "wght" 400;
+}
+
+h4 {
+    font-variation-settings: "wght" 700;
+}
+</pre>
+            <p>برای تغییر نقاط از کد زیر بهره بگیرید:</p>
+<pre>
+  body {
+    font-family: Arad-VF;
+    font-variation-settings: "wght" 400, "DSTY" 2; /* برای تغییر حالت نقاط، DSTY اضافه شده */
+}
+
+h1 {
+    font-variation-settings: "wght" 900, "DSTY" 2; /* برای تغییر حالت نقاط، DSTY اضافه شده */
+}
+</pre>
+
+
+          </div>
+        </div>
+
+      </div>
 
 </div>
 
@@ -220,8 +353,8 @@
 </script>
 
 <div class="question">
-I did not find my question here. what should i do?
-Ask your question on <a href="https://github.com/MDarvishi5124/Arad/discussions"> the font discussion page.</a> If the question is appropriate, it will be added here.
+سوالم رو اینجا پیدا نکردم. باید چیکار کنم؟
+در <a href="https://github.com/MohamadDarvishi/Arad/discussions">صفحۀ بحث فونت</a> سوال خود را بپرسید. اگر سوال مناسب باشد در اینجا هم اضافه خواهد شد.
 </div>
 
 
